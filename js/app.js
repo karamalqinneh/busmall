@@ -63,7 +63,20 @@ function photoChecker(){
 
 }
 
+// image loader 
+function imageLoader (currentRight, currentMid, currentLeft ) {
 
-let img = document.createElement('img')
-img.setAttribute('src', './assets/socrates.jpg')
-leftImage.appendChild(img);
+    let imgL = document.createElement('img')
+    imgL.setAttribute('src', currentLeft);
+    leftImage.appendChild(imgL);
+    let imgM = document.createElement('img')
+    imgM.setAttribute('src', currentMid);
+    midImage.appendChild(imgM);
+    let imgR = document.createElement('img')
+    imgR.setAttribute('src', currentRight);
+    rightImage.appendChild(imgR);
+
+}
+
+imageLoader(currentRight, currentMid, currentLeft);
+
